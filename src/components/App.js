@@ -14,8 +14,11 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route path="/movies">
+        <Route  exact path="/movies">
           <MoviesPage movies={movies} />
+        </Route>
+        <Route  exact path ="/movies">
+          <MoviesPage movies={setMovies}/>
         </Route>
         <Route exact path="/">
           <div>Home</div>
